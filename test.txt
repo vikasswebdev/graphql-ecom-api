@@ -1,0 +1,30 @@
+// for register
+mutation{
+  createUser(userInput: {
+    email: "vikaspatel2865@gmail.com",
+    name: "vikas patel",
+    password: "123456"
+  })
+  {
+    _id
+    name
+    email
+    password
+    role
+    
+  }
+}
+
+  
+// for login 
+ {
+    login(email: "vikaspatel2865@gmail.com", password: "123456"){
+      userId
+      token
+      email
+      name
+      role
+    }
+  }
+
+
